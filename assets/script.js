@@ -35,7 +35,7 @@ function currentTime() {
     // console.log($(this).parent().attr('id'));
 
     var inputText = $(this).siblings('.col-sm-10').val();
-    var timeValue = $(this).parent().attr('id');  // it says to save text, but I'm saving timeValue and inputText as key, value pair in local storage.
+    var timeValue = $(this).parent().attr('id');  // it only says to save text, but I'm saving timeValue and inputText as key, value pair in local storage.
     localStorage.setItem(timeValue, JSON.stringify(inputText));       // timeValue will be in 24 hour time format
 
   })
