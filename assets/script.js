@@ -1,8 +1,11 @@
 var today = moment();
 $('#currentDay').text(today.format("dddd, MMM Do YYYY"));
 
-// need to check whether each timeblock is past, present or future and change color
-// past = gray, present = red, future = green. These are already created in CSS.
+// right now input is stored in local storage, but disappears on refresh.
+
+
+// var nineAm = 
+// var data = JSON.parse(localStorage.getItem("key name"));
 
 function currentTime() {
     var currentTime = moment().hours()
@@ -35,7 +38,21 @@ function currentTime() {
     // console.log($(this).parent().attr('id'));
 
     var inputText = $(this).siblings('.col-sm-10').val();
-    var timeValue = $(this).parent().attr('id');  // it only says to save text, but I'm saving timeValue and inputText as key, value pair in local storage.
-    localStorage.setItem(timeValue, JSON.stringify(inputText));       // timeValue will be in 24 hour time format
+    var timeValue = $(this).parent().attr('id');  // it only says to save text, but 
+                                                  // I'm saving timeValue and inputText as 
+                                                  // key, value pair in local storage.
+                                                  // timeValue will be in 24 hour time format
+    localStorage.setItem(timeValue, JSON.stringify(inputText));
 
   })
+
+  // need a way to make the text stay on the page after refreshing the browswer or opening a new window:
+  $('#9 textarea').val(localStorage.getItem('9'));
+  $('#10 textarea').val(localStorage.getItem('10'));
+  $('#11 textarea').val(localStorage.getItem('11'));
+  $('#12 textarea').val(localStorage.getItem('12'));
+  $('#13 textarea').val(localStorage.getItem('13'));  // 13 = 1PM
+  $('#14 textarea').val(localStorage.getItem('14'));  // 14 = 2PM
+  $('#15 textarea').val(localStorage.getItem('15'));  // 15 = 3PM
+  $('#16 textarea').val(localStorage.getItem('16'));  // 16 = 4PM
+  $('#17 textarea').val(localStorage.getItem('17'));  // 17 = 5PM
