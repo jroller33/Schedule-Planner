@@ -1,5 +1,5 @@
 # Work Day Scheduler
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
 This is a simple calendar application that allows a user to save events for each hour of the business day. Past hours are gray, the current hour is red, and future hours are green.
