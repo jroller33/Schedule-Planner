@@ -47,12 +47,12 @@ function currentTime() {
   })
 
   // need a way to make the text stay on the page after refreshing the browswer or opening a new window:
-  $('#9 textarea').val(localStorage.getItem('9'));
-  $('#10 textarea').val(localStorage.getItem('10'));
-  $('#11 textarea').val(localStorage.getItem('11'));
-  $('#12 textarea').val(localStorage.getItem('12'));
-  $('#13 textarea').val(localStorage.getItem('13'));  // 13 = 1PM
-  $('#14 textarea').val(localStorage.getItem('14'));  // 14 = 2PM
-  $('#15 textarea').val(localStorage.getItem('15'));  // 15 = 3PM
-  $('#16 textarea').val(localStorage.getItem('16'));  // 16 = 4PM
-  $('#17 textarea').val(localStorage.getItem('17'));  // 17 = 5PM
+  $('#9 textarea').val(JSON.parse(localStorage.getItem('9')));
+  $('#10 textarea').val(JSON.parse(localStorage.getItem('10')));
+  $('#11 textarea').val(JSON.parse(localStorage.getItem('11')));
+  $('#12 textarea').val(JSON.parse(localStorage.getItem('12')));
+  $('#13 textarea').val(JSON.parse(localStorage.getItem('13')));  // 13 = 1PM
+  $('#14 textarea').val(JSON.parse(localStorage.getItem('14')));  // 14 = 2PM
+  $('#15 textarea').val(JSON.parse(localStorage.getItem('15')));  // 15 = 3PM
+  $('#16 textarea').val(JSON.parse(localStorage.getItem('16')));  // 16 = 4PM
+  $('#17 textarea').val(JSON.parse(localStorage.getItem('17')));  // 17 = 5PM
